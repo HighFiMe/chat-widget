@@ -1,8 +1,11 @@
-
+  .popover{
+      height: 70%;
+      max-width: 100%;
+  }
   .button {
       border-radius: 50%;
       size: 100%;
       position: absolute;
-      bottom: 40px;
-      right: 40px;
+      bottom: 50px;
+      right: 50px;
     }

@@ -9,7 +9,7 @@ import Iframe from './components/iFrame';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <Iframe style={{bottom:0}}/>    
+    <Iframe accessToken='some-token'/>    
   </React.StrictMode>
 );
 

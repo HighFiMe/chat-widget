@@ -1,33 +1,21 @@
-import React ,{  useRef, useState} from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faAmbulance, faAnchor, faComments } from '@fortawesome/free-solid-svg-icons'
+import { faComments } from '@fortawesome/free-solid-svg-icons'
 import 'bootstrap/dist/css/bootstrap.css';
 import Popover from 'react-bootstrap/Popover';
-//import {OverlayTrigger, Button} from 'react-bootstrap'
 import OverlayTrigger from 'react-bootstrap/OverlayTrigger';
 import './iFrame.css';
-import Button from 'react-bootstrap/Button';
 
- function IFrame(){
-    const iframeRef = useRef(null);
-    const [recievedMessage, setRecievedMessage] = useState("")
-   /* useEffect(() => {
-        window.addEventListener("message", function (e) {
-          if (e.origin !== "https://test-client-highfi.herokuapp.com/") return;
-          console.log(e.data);
-          setRecievedMessage("Got this message from child: " + e.data);
-               
-        });
-      }, []);*/
+ function IFrame(props){
       const popover = (
-        <Popover style={{ width:"200", height:"65%"}} id="popover-basic">
+        <Popover class="popover" id="popover-basic">
           <Popover.Header as="h3">HighFi Chat</Popover.Header>
           <Popover.Body>
-          <iframe ref={iframeRef}  width="100%" height="400" src="https://test-client-highfi.herokuapp.com/"></iframe>
+          <iframe width="100%" height="450" src={"https://test-client-highfi.herokuapp.com?accessToken=" + props.accessToken}></iframe>
           </Popover.Body>
         </Popover>
       );
       const Example = () => (
+        console.log(props.accessToken),
         <OverlayTrigger   trigger="click" placement="top" overlay={popover} >
           <button  class ="button" type="button" variant="success">
               <FontAwesomeIcon icon={faComments} color="black" />
@@ -36,8 +24,8 @@ import Button from 'react-bootstrap/Button';
       );
 
       return (
-        <div>
-            <Example/>
+        <div style= {{ width: "120%", height:"70%"}}>
+            <Example />
         </div>
        
       );
