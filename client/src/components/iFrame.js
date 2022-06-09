@@ -20,10 +20,10 @@ import Button from 'react-bootstrap/Button';
         });
       }, []);*/
       const popover = (
-        <Popover style={{ width:"200", height:"70%"}} id="popover-basic">
+        <Popover style={{ width:"200", height:"65%"}} id="popover-basic">
           <Popover.Header as="h3">CHAT</Popover.Header>
           <Popover.Body>
-          <iframe ref={iframeRef}  width="90%" height="400" src="https://test-client-highfi.herokuapp.com/"></iframe>
+          <iframe ref={iframeRef}  width="100%" height="400" src="https://test-client-highfi.herokuapp.com/"></iframe>
           </Popover.Body>
         </Popover>
       );
