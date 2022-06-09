@@ -21,7 +21,7 @@ import Button from 'react-bootstrap/Button';
       }, []);*/
       const popover = (
         <Popover style={{ width:"200", height:"65%"}} id="popover-basic">
-          <Popover.Header as="h3">CHAT</Popover.Header>
+          <Popover.Header as="h3">HighFi Chat</Popover.Header>
           <Popover.Body>
           <iframe ref={iframeRef}  width="100%" height="400" src="https://test-client-highfi.herokuapp.com/"></iframe>
           </Popover.Body>
