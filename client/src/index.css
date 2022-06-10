@@ -21,4 +21,5 @@ code {
   transform: translate(-50%, -50%);
   font-style: italic;
   font-size: 20px;
+  text-align: center;
 }
