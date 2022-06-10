@@ -12,7 +12,7 @@ root.render(
     <div className="intro-text">
       Highfi Me Test Client 
       <br/>
-      Please click on the chat plugin bottom right to know more
+      Please click on the chat plugin bottom right to chat with us
     </div>
     <Iframe accessToken='some-token'/>    
   </React.StrictMode>
