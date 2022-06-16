@@ -4,7 +4,7 @@ import 'bootstrap/dist/css/bootstrap.css';
 import Popover from 'react-bootstrap/Popover';
 import OverlayTrigger from 'react-bootstrap/OverlayTrigger';
 import './iFrame.scss';
-const $ = window.$;
+
 
  function IFrame(props){
       const popover = ( 
@@ -12,7 +12,7 @@ const $ = window.$;
         <Popover className="popover" id="popover-basic">
           <Popover.Body className='popover-body'>
             <div className='iframe'>
-               <iframe width="300" height="550px" src={"http://localhost:3002/?accessToken=some-token"}></iframe>
+               <iframe width="300" height="550px" src={"https://test-client-highfi.herokuapp.com?accessToken=" + props.accessToken}></iframe>
             </div>
           </Popover.Body>
         </Popover>
