@@ -6,7 +6,7 @@ import OverlayTrigger from 'react-bootstrap/OverlayTrigger';
 import './iFrame.scss';
 
 
- function IFrame(props){
+ function ChatWidget(props){
       const popover = ( 
         
         <Popover className="popover" id="popover-basic">
