@@ -3,7 +3,7 @@ import { faComments } from '@fortawesome/free-solid-svg-icons'
 import 'bootstrap/dist/css/bootstrap.css';
 import Popover from 'react-bootstrap/Popover';
 import OverlayTrigger from 'react-bootstrap/OverlayTrigger';
-import './iFrame.scss';
+import './ChatWidget.scss';
 
 
  function ChatWidget(props){
@@ -35,4 +35,4 @@ import './iFrame.scss';
 
 }
 
-export default IFrame;
+export default ChatWidget;

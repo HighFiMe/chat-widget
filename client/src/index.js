@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
-import Iframe from './components/iFrame';
+import ChatWidget from './components/ChatWidget';
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
@@ -14,7 +14,7 @@ root.render(
       <br/>
       Please click on the chat plugin bottom right to chat with us
     </div>
-    <Iframe accessToken='some-token'/>    
+    <ChatWidget accessToken='some-token'/>    
   </React.StrictMode>
 );
 

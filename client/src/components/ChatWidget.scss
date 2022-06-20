@@ -1,8 +1,11 @@
   .popover{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
       height: auto;
       min-width: 300px;
       max-width: auto;
+      border-radius: 5%;
       margin:0px;
+      border: 1px;
       padding:0px;
       display: block;
       .popover-body{
@@ -21,6 +24,7 @@
      
   }
   .button {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
       height: 50px;
       width: 50px;
       display:block;
