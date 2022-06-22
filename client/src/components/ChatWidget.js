@@ -12,7 +12,7 @@ import './ChatWidget.scss';
         <Popover className="popover" id="popover-basic">
           <Popover.Body className='popover-body'>
             <div className='iframe'>
-               <iframe width="300" height="550px" src={"https://test-client-highfi.herokuapp.com?accessToken=" + props.accessToken}></iframe>
+               <iframe width="300" height="550px" src={"https://chat-client.highfi.me/?accessToken=" + props.accessToken}></iframe>
             </div>
           </Popover.Body>
         </Popover>
