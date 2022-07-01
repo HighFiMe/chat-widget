@@ -3,18 +3,13 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
-import ChatWidget from './components/ChatWidget';
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <div className="intro-text">
-      Highfi Me Test Client 
-      <br/>
-      Please click on the chat plugin bottom right to chat with us
-    </div>
-    <ChatWidget accessToken='some-token'/>    
+    
+       <App/>
   </React.StrictMode>
 );
 
