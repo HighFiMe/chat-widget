@@ -1,70 +1,51 @@
-# Getting Started with Create React App
+# Install
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+```
+npm i highfi-chat-widget
+```
 
-## Available Scripts
+# Usage
 
-In the project directory, you can run:
+First request for early access by dropping a mail at aditya@highfi.me / gautam@highfi.me or reach out to us on twitter -  https://twitter.com/HighFiMe
 
-### `npm start`
+## Get your access token from the dashboard 
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Visit dashboard.highfi.me and follow the below steps to get your access token.
+1. Log-in to the dashboard and open your organization 
+2. Once open , you can navigate to the user nav bar button to go to the organization settings page 
+3. Reveal your API key and keep it handy to set up your widget. 
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Using in React
 
-### `npm test`
+Place the code below in any pages on which you would like to render the widget. If you'd like to render it in all pages by default, place it in the root component of your app.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-### `npm run build`
+```
+import React from 'react';
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+import { ChatWidget } from 'highfi-chat-widget';
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+const ExamplePage = () => {
+  return (
+    <>
+      {/*
+        Put <ChatWidget /> at the bottom of whatever pages you would
+        like to render the widget on, or in your root/router component
+        if you would like it to render on every page
+      */}
+      <ChatWidget accessToken="<API key>" provider={provider} />
+    </>
+  );
+};
+```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Please pass the provider of the connected wallet for the best user experience. 
 
-### `npm run eject`
+# Questions?
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+If you're having any trouble getting started or just want to say hi, join us on Slack! 👋
+## Submitting a PR
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+We welcome any contributions! Please create an issue before submitting a pull request.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+When creating a pull request, be sure to include a screenshot! 🎨

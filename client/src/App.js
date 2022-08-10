@@ -1,7 +1,8 @@
 import React, { useState, useEffect } from "react";
 import logo from "./logo.svg";
 import "./App.css";
-import ChatWidget from "./components/ChatWidget";
+import { ChatWidget } from 'highfi-chat-widget';
+// import ChatWidget from "./lib/components/ChatWidget";
 import Onboard from "@web3-onboard/core";
 import injectedModule from "@web3-onboard/injected-wallets";
 import { ethers } from "ethers";
